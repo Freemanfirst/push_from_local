@@ -134,6 +134,18 @@ func SetTitle()
 	"新建文件后，自动定位到文件末尾
 	autocmd BufNewFile * normal G
 endfunc
+""""""""""""""""""""""""""""""""""""""
+""显示相关
+""""""""""""""""""""""""""""""""""""""
+set shortmess=atl  ""不显示援助提示
+
+Plugin 'cormacrelf/vim-colors-github'
+
+colorscheme github
+let g:airline_theme = "github"
+let g:github_colors_block_diffmark = 0
+call github_colors#togglebg_map('<f5)')
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "键盘命令
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
